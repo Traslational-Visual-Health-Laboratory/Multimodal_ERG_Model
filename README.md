@@ -22,8 +22,12 @@ The Learnable FFT layer is designed to function as the primary spectral feature 
 * **Clinical Branch:** Feeds numerical clinical variables through a Multi-Layer Perceptron (MLP). A final Multimodal ↔ Clinical Cross-Attention layer merges the physiological/visual features with the patient's clinical profile.
 * **Classifier:** The fully fused representation passes through dense layers to output the final binary classification.
 
-<img width="716" height="796" alt="Imagen1" src="https://github.com/user-attachments/assets/3c7f8a5e-931a-4c30-89b3-403991edb608" />
-
 ## Implementation
 
 The custom layer is built using TensorFlow and Keras. You can find the complete implementation in the **`classes.py`** script under the class name **`FFT_layer`**.
+
+Furthermore, we complement the FFT branch with a temporal extraction module using 1D Convolutional Neural Networks, an image feature extraction module designed for scalograms via a VGG16 backbone, and a clinical data module to enhance the classification of basal ERG (bERG) signals. The complete architecture can be found in the `model.py` script under the name `multimodal_erg_model`.
+
+<img width="716" height="796" alt="Imagen1" src="https://github.com/user-attachments/assets/3c7f8a5e-931a-4c30-89b3-403991edb608" />
+
+
