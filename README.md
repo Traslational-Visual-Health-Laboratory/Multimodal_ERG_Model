@@ -22,7 +22,7 @@ The Learnable FFT layer is designed to function as the primary spectral feature 
 * **Clinical Branch:** Feeds numerical clinical variables through a Multi-Layer Perceptron (MLP). A final Multimodal ↔ Clinical Cross-Attention layer merges the physiological/visual features with the patient's clinical profile.
 * **Classifier:** The fully fused representation passes through dense layers to output the final binary classification.
 
-![Multimodal Architecture and Learnable FFT Module](<img width="1120" height="1244" alt="image" src="https://github.com/user-attachments/assets/b961aea4-22f0-4166-88e2-1e2624182a93" />
+![Multimodal Architecture and Learnable FFT Module](<img width="716" height="796" alt="Imagen1" src="https://github.com/user-attachments/assets/77657313-837b-4c04-b517-1c3c3351f96f" />
 )
 
 ## Implementation
